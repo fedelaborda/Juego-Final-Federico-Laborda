@@ -5,14 +5,15 @@ using UnityEngine;
 public class Gol : MonoBehaviour
 {
 
-    public bool gol;
+    public int golRojo;
     public GameObject player1;
     public GameObject player2;
+    public GameObject confetiRojo;
 
     // Start is called before the first frame update
     void Start()
     {
-        gol = false;
+        golRojo = 0;
     }
 
     // Update is called once per frame
@@ -32,6 +33,12 @@ public class Gol : MonoBehaviour
             player2.transform.position = new Vector3(0, 0.5f, 10);
             player2.transform.eulerAngles = new Vector3(0, 180, 0);
 
+            golRojo ++;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Instantiate(confetiRojo);
+            }
         }
 
     }
