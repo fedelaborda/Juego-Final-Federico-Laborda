@@ -9,11 +9,17 @@ public class Gol : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject confetiRojo;
+    AudioSource hinchada;
+    AudioSource gritoGol;
+    bool isPlaying; 
 
     // Start is called before the first frame update
     void Start()
     {
         golRojo = 0;
+        hinchada = GetComponent<AudioSource>();
+        gritoGol = GetComponent<AudioSource>();
+        isPlaying = true;
     }
 
     // Update is called once per frame
@@ -39,6 +45,19 @@ public class Gol : MonoBehaviour
             {
                 Instantiate(confetiRojo);
             }
+
+            isPlaying = !isPlaying;
+
+            if (isPlaying)
+            {
+                hinchada.Play;
+            }
+            else
+            {
+                hinchada.Stop;
+                gritoGol.Play;
+            }
+
         }
 
     }
