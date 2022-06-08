@@ -44,18 +44,19 @@ public class Gol : MonoBehaviour
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(confetiRojo);
+                
             }
 
             isPlaying = !isPlaying;
 
-            if (isPlaying)
+            //if (isPlaying)
             {
-                hinchada.Play;
+            //    hinchada.Play;
             }
-            else
+           // else
             {
-                hinchada.Stop;
-                gritoGol.Play;
+           //     hinchada.Stop;
+             //   gritoGol.Play;
             }
 
         }
