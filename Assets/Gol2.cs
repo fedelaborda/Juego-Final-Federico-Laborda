@@ -9,6 +9,7 @@ public class Gol2 : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject confetiAzul;
+    public float TimeToDestroy = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,13 @@ public class Gol2 : MonoBehaviour
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(confetiAzul);
+
+                TimeToDestroy -= Time.deltaTime;
+                
+                if(TimeToDestroy <= 0)
+                {
+                    Destroy(confetiAzul);
+                }
             }
 
         }

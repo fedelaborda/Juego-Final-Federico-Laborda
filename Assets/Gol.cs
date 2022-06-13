@@ -12,7 +12,7 @@ public class Gol : MonoBehaviour
     public GameObject confetiRojo;
     AudioSource hinchada;
     AudioSource gritoGol;
-    bool isPlaying; 
+    public float TimeToDestroy = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,6 @@ public class Gol : MonoBehaviour
         golRojo = 0;
         hinchada = GetComponent<AudioSource>();
         gritoGol = GetComponent<AudioSource>();
-        isPlaying = true;
     }
 
     // Update is called once per frame
@@ -45,21 +44,15 @@ public class Gol : MonoBehaviour
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(confetiRojo);
-                
-            }
 
-            isPlaying = !isPlaying;
+                TimeToDestroy -= Time.deltaTime;
 
-            //if (isPlaying)
-            {
-            //    hinchada.Play;
+                if (TimeToDestroy <= 0)
+                {
+                    Destroy(confetiRojo);
+                }
             }
-           // else
-            {
-           //     hinchada.Stop;
-             //   gritoGol.Play;
-            }
-
+            
         }
 
     }
