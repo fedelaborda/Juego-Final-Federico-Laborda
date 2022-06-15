@@ -22,6 +22,7 @@ public class InstantiateRojo : MonoBehaviour
 
         if (col.gameObject.tag == "Finish")
         {
+
             Instantiate(prefab);
         }
 

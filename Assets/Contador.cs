@@ -11,9 +11,13 @@ public class Contador : MonoBehaviour
     public GameObject confetiRojo;
     public GameObject confetiAzul;
 
+    public Text ContadorRojo;
+    public Text ContadorAzul;
+
     public float TimeToFinish = 10f;
     public Text ContadorText;
     public int TiempoToText;
+    public int variableCero = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,7 @@ public class Contador : MonoBehaviour
         TimeToFinish -= Time.deltaTime;
         TiempoToText = (int)TimeToFinish;
         ContadorText.text = TiempoToText.ToString();
+        
 
         if (TimeToFinish <= 0)
         {
@@ -46,5 +51,7 @@ public class Contador : MonoBehaviour
         //Destroy(confetiAzul);
         //Destroy(confetiRojo);
         TimeToFinish = 10f;
+        ContadorRojo = 0;
+        ContadorAzul = 0;
     }
 }
