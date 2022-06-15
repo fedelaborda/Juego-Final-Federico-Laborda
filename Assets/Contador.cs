@@ -17,9 +17,12 @@ public class Contador : MonoBehaviour
     public float TimeToFinish = 10f;
     public Text ContadorText;
     public int TiempoToText;
-    public int variableCero = 0;
+
 
     // Start is called before the first frame update
+
+    int variableCero = 0;
+
     void Start()
     {
         
@@ -50,8 +53,7 @@ public class Contador : MonoBehaviour
         pelota.transform.position = new Vector3(0, 0.57f, 0);
         //Destroy(confetiAzul);
         //Destroy(confetiRojo);
-        TimeToFinish = 10f;
-        ContadorRojo = 0;
-        ContadorAzul = 0;
+        TimeToFinish = 30f;
+        
     }
 }
