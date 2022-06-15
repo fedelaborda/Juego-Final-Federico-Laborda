@@ -9,7 +9,9 @@ public class Gol : MonoBehaviour
     public int golRojo;
     public GameObject player1;
     public GameObject player2;
+    public GameObject ArcoRojo;
     public GameObject confetiRojo;
+    public Text ContadorRojo;
     AudioSource hinchada;
     AudioSource gritoGol;
     public float TimeToDestroy = 3f;
@@ -40,6 +42,8 @@ public class Gol : MonoBehaviour
             player2.transform.eulerAngles = new Vector3(0, 180, 0);
 
             golRojo ++;
+
+            ContadorRojo.text = golRojo.ToString();
 
             for (int i = 0; i < 10; i++)
             {

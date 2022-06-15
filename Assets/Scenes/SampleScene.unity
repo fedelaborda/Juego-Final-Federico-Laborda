@@ -531,6 +531,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 144753712}
+  - {fileID: 1157839893}
+  - {fileID: 448376299}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -539,6 +541,83 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &448376298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448376299}
+  - component: {fileID: 448376301}
+  - component: {fileID: 448376300}
+  m_Layer: 5
+  m_Name: GOLAZULContador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &448376299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448376298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 286678180}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -92.4, y: 166}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &448376300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448376298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.052272934, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &448376301
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448376298}
+  m_CullTransparentMesh: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +1040,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 1812321375}
   player2: {fileID: 1993422131}
-  TimeToFinish: 120
+  pelota: {fileID: 1844296625}
+  confetiRojo: {fileID: 1144264303970665827, guid: a82de4742ae22b94198a705e196ab367,
+    type: 3}
+  confetiAzul: {fileID: 5505622913622243000, guid: d09fafa3eaa21e844a585fca56144d0c,
+    type: 3}
+  TimeToFinish: 10
   ContadorText: {fileID: 144753713}
   TiempoToText: 0
 --- !u!4 &893818229
@@ -1069,6 +1153,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1157839892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157839893}
+  - component: {fileID: 1157839895}
+  - component: {fileID: 1157839894}
+  m_Layer: 5
+  m_Name: GOLROJOContador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1157839893
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157839892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 286678180}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 86.2, y: 166}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1157839894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157839892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.022976875, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &1157839895
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157839892}
+  m_CullTransparentMesh: 0
 --- !u!1 &1200519328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1932,9 @@ MonoBehaviour:
   golRojo: 0
   player1: {fileID: 1812321375}
   player2: {fileID: 1993422131}
+  ArcoRojo: {fileID: 1200519328}
   confetiRojo: {fileID: 1334238493}
+  ContadorRojo: {fileID: 1157839894}
   TimeToDestroy: 3
 --- !u!114 &1844296632
 MonoBehaviour:
@@ -1788,7 +1951,9 @@ MonoBehaviour:
   golAzul: 0
   player1: {fileID: 1812321375}
   player2: {fileID: 1993422131}
+  ArcoAzul: {fileID: 2017568581}
   confetiAzul: {fileID: 1875743310}
+  ContadorAzul: {fileID: 448376300}
   TimeToDestroy: 3
 --- !u!1 &1872267522
 GameObject:
@@ -2167,7 +2332,7 @@ GameObject:
   - component: {fileID: 2017568583}
   m_Layer: 0
   m_Name: ArcoAzul
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2336,6 +2501,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081494389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081494390}
+  m_Layer: 0
+  m_Name: Empty2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081494390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081494389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 217, y: 293.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094706449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,17 +2643,17 @@ PrefabInstance:
     - target: {fileID: 2801582770469618202, guid: a82de4742ae22b94198a705e196ab367,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 2801582770469618202, guid: a82de4742ae22b94198a705e196ab367,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.178
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 2801582770469618202, guid: a82de4742ae22b94198a705e196ab367,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.43
+      value: -15.8
       objectReference: {fileID: 0}
     - target: {fileID: 2801582770469618202, guid: a82de4742ae22b94198a705e196ab367,
         type: 3}
@@ -2517,17 +2712,17 @@ PrefabInstance:
     - target: {fileID: 1687421356314243642, guid: d09fafa3eaa21e844a585fca56144d0c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.15
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 1687421356314243642, guid: d09fafa3eaa21e844a585fca56144d0c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29
+      value: 0.178
       objectReference: {fileID: 0}
     - target: {fileID: 1687421356314243642, guid: d09fafa3eaa21e844a585fca56144d0c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.79
+      value: 16.79
       objectReference: {fileID: 0}
     - target: {fileID: 1687421356314243642, guid: d09fafa3eaa21e844a585fca56144d0c,
         type: 3}

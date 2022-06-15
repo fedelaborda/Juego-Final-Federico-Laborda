@@ -7,8 +7,11 @@ public class Contador : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
+    public GameObject pelota;
+    public GameObject confetiRojo;
+    public GameObject confetiAzul;
 
-    public float TimeToFinish = 120f;
+    public float TimeToFinish = 10f;
     public Text ContadorText;
     public int TiempoToText;
 
@@ -39,5 +42,9 @@ public class Contador : MonoBehaviour
         player1.transform.eulerAngles = new Vector3(0, 0, 0);
         player2.transform.position = new Vector3(0, 0.5f, 10);
         player2.transform.eulerAngles = new Vector3(0, 180, 0);
+        pelota.transform.position = new Vector3(0, 0.57f, 0);
+        //Destroy(confetiAzul);
+        //Destroy(confetiRojo);
+        TimeToFinish = 10f;
     }
 }

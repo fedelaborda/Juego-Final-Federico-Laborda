@@ -8,7 +8,9 @@ public class Gol2 : MonoBehaviour
     public int golAzul;
     public GameObject player1;
     public GameObject player2;
+    public GameObject ArcoAzul;
     public GameObject confetiAzul;
+    public Text ContadorAzul;
     public float TimeToDestroy = 3f;
 
     // Start is called before the first frame update
@@ -26,7 +28,7 @@ public class Gol2 : MonoBehaviour
     void OnCollisionEnter(Collision col)
     {
 
-        if (col.gameObject.tag == "Finish")
+        if (col.gameObject.name == "ArcoAzul")
         {
             transform.position = new Vector3(0, 0.57f, 0);
             player1.transform.position = new Vector3(0, 0.5f, -10);
@@ -35,7 +37,8 @@ public class Gol2 : MonoBehaviour
             player2.transform.eulerAngles = new Vector3(0, 180, 0);
 
             golAzul ++;
-            
+            ContadorAzul.text = golAzul.ToString();
+
             for (int i = 0; i < 10; i++)
             {
                 Instantiate(confetiAzul);
