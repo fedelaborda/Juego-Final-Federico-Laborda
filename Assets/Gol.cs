@@ -11,6 +11,7 @@ public class Gol : MonoBehaviour
     public GameObject player2;
     public GameObject ArcoRojo;
     public GameObject confetiRojo;
+    public GameObject panel1;
     public Text ContadorRojo;
     AudioSource hinchada;
     AudioSource gritoGol;
@@ -56,7 +57,12 @@ public class Gol : MonoBehaviour
                     Destroy(confetiRojo);
                 }
             }
-            
+
+            if (golRojo >= 3)
+            {
+                panel1.SetActive(true);
+            }
+
         }
 
     }

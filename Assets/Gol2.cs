@@ -10,7 +10,7 @@ public class Gol2 : MonoBehaviour
     public GameObject player2;
     public GameObject ArcoAzul;
     public GameObject confetiAzul;
-    public GameObject panel1;
+    public GameObject panel2;
     public Text ContadorAzul;
     public float TimeToDestroy = 3f;
 
@@ -52,14 +52,13 @@ public class Gol2 : MonoBehaviour
                 }
             }
 
+            if (golAzul >= 3)
+            {
+                panel2.SetActive(true);
+            }
+
         }
 
     }
-    public void Ganador()
-    {
-        if (golAzul >= 3)
-        {
-            panel1.SetActive(true);
-        }
-    }
+
 }
