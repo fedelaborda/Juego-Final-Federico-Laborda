@@ -1045,7 +1045,7 @@ MonoBehaviour:
     type: 3}
   confetiAzul: {fileID: 5505622913622243000, guid: d09fafa3eaa21e844a585fca56144d0c,
     type: 3}
-  TimeToFinish: 10
+  TimeToFinish: 30
   ContadorText: {fileID: 144753713}
   TiempoToText: 0
 --- !u!4 &893818229
